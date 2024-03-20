@@ -1,5 +1,6 @@
 ﻿using Business.Abstract;
 using Business.BusinessAspects.Autofac;
+using Core.Aspects.Autofac.Caching;
 using Core.Utilities.Results;
 using DataAccess.Abstract;
 using Entities;
@@ -14,7 +15,7 @@ namespace Business.Concrete
     public class ProductManager : IProductService
     {
 
-        //Soyut nesneyle baglanti kuruyruz.Ne Inmemory ismi ne de entity framework ismi gececek.
+        //Soyut nesneyle baglanti kuruyruz.Ne Inmemory ismi ne de entity framework ismi gecmiyor.
         IProductDal _productDal;
        
 
@@ -25,7 +26,14 @@ namespace Business.Concrete
             
         }
 
+        //Burada AOP yapilanmasi kullaniyorum.Yani Add methodu calistirilmadan once methodun ustune bakiliyor.
+        //Eger Add methodundan once calistirilmasi gereken kodlar varsa onlari calistiriyor.
+        //Burada ise ekleme islemi yapilmadan ilgili kullanicinin yetkisi olup olmadigi kontrol ediliyor.
+        //Eger kullanicinin "product.add,admin" yetkileri varsa urun ekleyebilir.
+        //Boylelikle methodun ici cok temiz olup kod karmasikligi onleniyor.Loglama ,Caching gibi yapilanmalari AOP sayesinde bu sekilde entegre edebilirim.
+
         [SecuredOperation("product.add,admin")]
+      //  [CacheRemoveAspect("IProductService.Get")]//IProductService teki butun Get'leri siler.
         public IResult Add(Product product)
 
         {
@@ -34,6 +42,7 @@ namespace Business.Concrete
             return new SuccessResult("Product added");
 
         }
+        [CacheAspect]
         public IDataResult<List<Product>> GetAll()
         {
             //is kodlarini geciyorsa veri erisimi cagiririz.
@@ -45,11 +54,14 @@ namespace Business.Concrete
         }
 
 
+        [SecuredOperation("product.add,admin")]
 
         public IResult Update(Product product)
         {
             return new SuccessResult("Product updated");
         }
+
+        [SecuredOperation("product.add,admin")]
 
         public IResult Delete(Product product)
         {

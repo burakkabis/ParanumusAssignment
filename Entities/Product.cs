@@ -7,6 +7,8 @@ using System.Threading.Tasks;
 
 namespace Entities
 {
+
+    //IEntity: IEntity implement eden class veri tabani tablosudur.IEntity Core/Entities altinda olusturulan ve sadece isaretleme gorevi olan bir interface yapisidir.
     public class Product:IEntity
     {
         public int Id { get; set; }

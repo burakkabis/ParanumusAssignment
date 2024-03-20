@@ -9,6 +9,8 @@ using System.Threading.Tasks;
 
 namespace DataAccess.Abstract
 {
+
+    //IEntityRepository:Core/DataAccess katmaninda bulununan ve butun entitiyler icin base gorevi gorecek Dal(Data Access Layer),veri tabani islemlerinin base i konumundadir.
     public interface IProductDal:IEntityRepository<Product>
     {
 

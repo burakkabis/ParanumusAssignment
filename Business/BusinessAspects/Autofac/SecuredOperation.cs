@@ -15,6 +15,11 @@ namespace Business.BusinessAspects.Autofac
 
     //Secured Operation JWT icin.
 
+    //Security icin AOP temel kodu
+    //Burada goruldugu gibi Secured Operation methodu Method Interceoption sinifini inherit ediyor.
+    //Method Interception virtual olarak bazi methodlari bulunuyor(onBefore,onSuccess gibi.)Bu sinifta ise istedigimiz methodu ezebiliyoruz.
+    //Urun eklenmeden once yetki kontrolunun yapilmasi gerekli oldugu icin OnBefore methodunu ezip orda rol bazli kontrol yapiyorum.
+
     public class SecuredOperation : MethodInterception
     {
         private string[] _roles;

@@ -9,6 +9,8 @@ namespace Core.Utilities.Interceptors
 {
     public abstract class MethodInterception : MethodInterceptionBaseAttribute
     {
+        //Burada AOP var.(Aspect Oriented Programming)AOP bir method calismadan once methodlarin yapmasi gereken gorevleri soyler.Business/Concrete/ProductManager da daha detayli aciklamis olacagim.
+        //Buradaki yapilanma viryual methodlar oldugu icin bu sinif ilgili yerde cagrildiginda hangi methodlar ezilirse o calisir.
         //invocation:businnes method(add,getall.delete...)
         protected virtual void OnBefore(IInvocation invocation) { }
         protected virtual void OnAfter(IInvocation invocation) { }

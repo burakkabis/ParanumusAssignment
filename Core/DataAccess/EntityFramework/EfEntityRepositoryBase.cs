@@ -9,8 +9,11 @@ using System.Threading.Tasks;
 
 namespace Core.DataAccess.EntityFramework
 {
+    //Generic constraint:Generic kisitlama
+    //Butun projelerde kullanilacak olan Entitiy Framework icin genel bir base gorevi gorurur.
+    //Yapilanma generic oldugu icin sadece entity ve context nesnelerini verdigimizde butun CRUD operasyonlarini gerceklestirebilir.
     public class EfEntityRepositoryBase<TEntity, TContext> : IEntityRepository<TEntity>
-       where TEntity : class, IEntity, new()
+       where TEntity : class, IEntity, new()//TEntity:IEntity implemente etmis bir class alabilir.Bunlarda Entities katmaninda bulunan nesnelerimizdir.Generic constraint yapmis bulunuyorum.
        where TContext : DbContext, new()
     {
 
