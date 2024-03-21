@@ -120,10 +120,7 @@ Autofac:7.0.0<br>Autofac.Extensions.DependencyInjection:7.0.0<br>Autofac.Extras.
 
 ### <p id="description">Program calistiginda Portunuz benim portumdan farkli olabilir.Benim suanki portum:https://localhost:7235/ Eger sizinki farkliysa lutfen kendi portunuza gore degistirip istekleri oyle yapiniz. </p>
 
-### GetAll istegi:
 
-!(![getall istegi](https://github.com/burakkabis/ParanumusAssignment/assets/134310460/7f0f22de-cb06-4dd4-9fc9-d1577acea734)
-)
 
 
 ### Kullanici Register Islemi:
@@ -151,5 +148,68 @@ Autofac:7.0.0<br>Autofac.Extensions.DependencyInjection:7.0.0<br>Autofac.Extras.
 
 !(![LOGIN2](https://github.com/burakkabis/ParanumusAssignment/assets/134310460/7e5e4730-e1b5-4d4f-9bd6-ed3af057f569)
 )
+
+
+### GETALL Istegi:
+
+!(![getall istegi](https://github.com/burakkabis/ParanumusAssignment/assets/134310460/7f0f22de-cb06-4dd4-9fc9-d1577acea734)
+)
+
+
+### ADD Istegi(Yetkisiz):
+<p id="description">Ekleme yapilirken yetki olmasi gerektigi icin,simdilik kullaniciya yetki vermedigimiz icin ekleme operasyonu yapilirken "Yetkiniz yok hatasi aliyor."</p>
+
+!(![PRODUCTADD(YETKI YOK)](https://github.com/burakkabis/ParanumusAssignment/assets/134310460/87e0c0c9-c040-4539-a616-b8a766a52386)
+)
+
+!(![PRODUCTADD(YETKI YOK)2](https://github.com/burakkabis/ParanumusAssignment/assets/134310460/5ebd0c91-2a77-4651-84b8-af6696953252)
+)
+
+### ADD Istegi(Yetkili):
+<p id="description">Yukarida Database kisminda bulunan Ahmet isimli 3 numarali Id'ye sahip olan kullanici OperationClaims tablosunda bulunan 4 numarali id olan "product.add" yetkisine sahiptir.Bunu UserOperationClaims tablosunda (3 numarali userId yani (Ahmet) 4 numarali OperationClaims(yani "product.add" )) yetkisine sahiptir)gorebiliriz.Eger ekleme islemi yaparken Ahmet kullanicisiyla bu islemi yapacak olursak bir problem olmaz.</p>
+
+
+<p id="description">Oncelikle yetkili olan Ahmet kullanicisinin sisteme girisi yapiliyor.Tirnak icindeki token degeri kopyalanir."</p>
+
+!(![PRODUCTADD(YETKI VAR1)](https://github.com/burakkabis/ParanumusAssignment/assets/134310460/26579b08-86e8-4fd6-a0e4-801ee38cde50)
+)
+
+
+<p id="description">Products/add kisminda urun bilgileri Body/raw/json formatinda yazilir."</p>
+
+!(![PRODUCTADD(YETKI VAR2)](https://github.com/burakkabis/ParanumusAssignment/assets/134310460/eb4eae03-6f5f-42b8-b836-c2ddbd4cc57c)
+)
+
+
+<p id="description">Login islemi yapildiginda kopyalamis oldugumuz tokeni Headers/Authorization kismina tokenin basina Bearer ekleyip Send tusuna basariz.</p>
+
+!(![PRODUCTADD(YETKI VAR3)](https://github.com/burakkabis/ParanumusAssignment/assets/134310460/f2d541a2-e22a-4712-90a7-47d02635758f)
+)
+
+
+!(![PRODUCTADD(YETKI VAR4)](https://github.com/burakkabis/ParanumusAssignment/assets/134310460/7fd4e32b-660c-4374-9e19-f1c0fe2e0338)
+)
+
+
+### DELETE Istegi(Yetkili):
+
+
+<p id="description">Yetkilendirme mekanizmasi varken.Ahmet kullanicisi yine yetkili."</p>
+
+
+!(![ProductDelete(yetkilendirme mekanizmasini yorum satiri yaptiktan sonra  urunun silinmesi ve geri donus degeri)](https://github.com/burakkabis/ParanumusAssignment/assets/134310460/0ef66a86-4ace-4380-902a-28fe72fe7dc7)
+)
+
+<p id="description">Ahmet kullancisi yetkili degilken.</p>
+
+
+!(![ProductDelete(yetki yok)1](https://github.com/burakkabis/ParanumusAssignment/assets/134310460/dfed4fd7-052f-42b8-acc5-6ce54f6ad478)
+)
+
+
+!(![ProductDelete(yetki yok)2](https://github.com/burakkabis/ParanumusAssignment/assets/134310460/9747fe9b-0df0-4a39-8280-40ee896c305a)
+)
+
+
 
 
