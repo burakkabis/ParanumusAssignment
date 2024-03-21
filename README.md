@@ -32,6 +32,25 @@ InMemoryProductDal yerine EfProductDal yazarsam veri erisimim tamamen EntityFram
 Autofac:7.0.0<br>Autofac.Extensions.DependencyInjection:7.0.0<br>Autofac.Extras.DynamicProxy :7.0.0<br>Microsoft.AspNetCore.Authentication.JwtBearer:6.0.0<br>Microsoft.AspNetCore.Http:2.2.2<br>Microsoft.AspNetCore.Http.Abstractions: 2.2.0<br>Microsoft.EntityFrameworkCore:7.0.0<br>Microsoft.EntityFrameworkCore.SqlServer:7.0.0<br>Microsoft.Extensions.Configuration.Binder:7.0.0<br>Swashbuckle.AspNetCore:6.2.3
 
 
+## Projede bulunmasi gerekenler
+.Net 6.0 <br> Microsoft Sql Server Managment Studio 18 <br> Postman
+
+## Kurulum Asamasi
+
+!(![1](https://github.com/burakkabis/ParanumusAssignment/assets/134310460/add2a45b-ae21-4880-ab67-e04f2ad7c8fd)
+)
+
+!(![2](https://github.com/burakkabis/ParanumusAssignment/assets/134310460/39978f7e-ee24-47e5-a8e0-dd3f7ba87145)
+)
+
+!(![3](https://github.com/burakkabis/ParanumusAssignment/assets/134310460/5d90addc-d349-438b-b333-3aa67c00fcbe)
+)
+
+!(![4](https://github.com/burakkabis/ParanumusAssignment/assets/134310460/e94d5f4a-c3b6-4ec1-a208-3e9b6d98144d)
+)
+
+!(![5](https://github.com/burakkabis/ParanumusAssignment/assets/134310460/a8a7029d-a562-42c6-bbe0-9daa70aa83db)
+)
 
 ## Database
 <p id="description">Projede veritabanı olarak SQL SERVER kullanıldı. Veritabanını oluşturmak için gerekli kodlari mail araciligiyla size atmis bulunmaktayim.Eger kendiniz veri tabanini olusturmak isterseniz asagidaki gorsellerdeki adimi takip etmeniz yeterli olacaktir.</p>
