@@ -62,7 +62,7 @@ Autofac:7.0.0<br>Autofac.Extensions.DependencyInjection:7.0.0<br>Autofac.Extras.
 
 !(![paranumusveritabanisql](https://github.com/burakkabis/ParanumusAssignment/assets/134310460/3096ca69-bcd0-4d17-beeb-f8d986482698)
 )
-<p id="description">Eger kendiniz veri tabanini olusturmak isterseniz asagidaki gorsellerdeki adimi takip etmeniz yeterli olacaktir.</p>
+<p id="description">Eger kendiniz veri tabanini olusturmak isterseniz, asagida bulunan gorsellerdeki adimlari takip etmeniz yeterli olacaktir.</p>
 
 
 
@@ -176,6 +176,7 @@ Autofac:7.0.0<br>Autofac.Extensions.DependencyInjection:7.0.0<br>Autofac.Extras.
 )
 
 ### Login yaparken sifre hatali girilirse:
+<p id="description">Noramlde sifer"12345" burada ise "1234" girdim.</p>
 <p id="description">Parola hatasi mesaji alir.</p>
 
 !(![LOGIN2](https://github.com/burakkabis/ParanumusAssignment/assets/134310460/7e5e4730-e1b5-4d4f-9bd6-ed3af057f569)
