@@ -96,7 +96,7 @@ Autofac:7.0.0<br>Autofac.Extensions.DependencyInjection:7.0.0<br>Autofac.Extras.
 
 
 
-## <p id="description">4-UserOperationClaims Tablosunun olusturulmasi.</p>
+## <p id="description">5-UserOperationClaims Tablosunun olusturulmasi.</p>
 
 !(![3UserOperationClaimsDesign](https://github.com/burakkabis/ParanumusAssignment/assets/134310460/be9d799e-22b3-403a-9ebf-69c93329b16c)
 )
@@ -106,7 +106,7 @@ Autofac:7.0.0<br>Autofac.Extensions.DependencyInjection:7.0.0<br>Autofac.Extras.
 
 
 
-## <p id="description">4-Users Tablosunun olusturulmasi.</p>
+## <p id="description">6-Users Tablosunun olusturulmasi.</p>
 
 !(![4UsersDesign](https://github.com/burakkabis/ParanumusAssignment/assets/134310460/23204d1e-1904-4a84-89d8-4e21b06267d8)
 )
