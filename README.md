@@ -53,7 +53,15 @@ Autofac:7.0.0<br>Autofac.Extensions.DependencyInjection:7.0.0<br>Autofac.Extras.
 )
 
 ## Database
-<p id="description">Projede veritabanı olarak SQL SERVER kullanıldı. Veritabanını oluşturmak için gerekli kodlari mail araciligiyla size atmis bulunmaktayim.Eger kendiniz veri tabanini olusturmak isterseniz asagidaki gorsellerdeki adimi takip etmeniz yeterli olacaktir.</p>
+<p id="description">Projede veritabanı olarak SQL SERVER kullanıldı. Veritabanını oluşturmak için gerekli kodlari projenin icine "ParanumusVeritabani.sql" dosyasinda bulabilirsiniz.</p>
+
+!(![paranumusveritabanisql](https://github.com/burakkabis/ParanumusAssignment/assets/134310460/3096ca69-bcd0-4d17-beeb-f8d986482698)
+)
+<p id="description">Eger kendiniz veri tabanini olusturmak isterseniz asagidaki gorsellerdeki adimi takip etmeniz yeterli olacaktir.</p>
+
+
+
+
 
 ## <p id="description">1-Sql server uzerinde yeni bir veri tabani olusturun.</p>
 
