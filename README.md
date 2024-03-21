@@ -1,4 +1,9 @@
 
+### <p id="description">NOT:BU PROJE ODEVDE VERILEN PART2-PART3 VE PART5'in TASK5.1'ini kapsamaktadir.</p>
+
+
+
+
 <p id="description">Merhaba 👋
  Bu proje Çok Katmanlı Mimari temel alınarak geliştirilmiştir. Projede SOLID yazılım prensipleri benimsenmiştir.Veritabanı için SQL Server Veritabanı kullanılmaktadır. Ayrıca projenin Front-End tarafı ve diğer uygulamalarla iletişim kurabilmesi için servis katmanında bir Web API kodlanmıştır. Projenin back-end kısmında C# kullanıldı. Geliştirme çok katmanlı mimari esas alınarak yapıldı. Katmanların ne işe yaradığı hakkında bilgi vermek istiyorum;</p>
 
