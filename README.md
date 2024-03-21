@@ -115,21 +115,41 @@ Autofac:7.0.0<br>Autofac.Extensions.DependencyInjection:7.0.0<br>Autofac.Extras.
 
 
 
-
-
-
-
-
-
-
 ## PROJENIN TESTI:
-Sistemi ister Postman ister Run edildiginde web ekranina gelen swagger uzerinden test edebilirsiniz.
-<h2>🛠️ Installation Steps:</h2>
+<p id="description">Sistemi ister Postman ile ister Run edildiginde web ekranina gelen swagger uzerinden test edebilirsiniz.Ben postman ile test etmeyi tercih ettim.</p>
 
-<p>1. firstly</p>
+### <p id="description">Program calistiginda Portunuz benim portumdan farkli olabilir.Benim suanki portum:https://localhost:7235/ Eger sizinki farkliysa lutfen kendi portunuza gore degistirip istekleri oyle yapiniz. </p>
 
-```
-https://localhost:7235/api/products/getall
-https://localhost:7235/api/products/getall
+### GetAll istegi:
+
+!(![getall istegi](https://github.com/burakkabis/ParanumusAssignment/assets/134310460/7f0f22de-cb06-4dd4-9fc9-d1577acea734)
+)
+
+
+### Kullanici Register Islemi:
+
+!(![REGISTER1](https://github.com/burakkabis/ParanumusAssignment/assets/134310460/bd05201c-5a3d-44d9-9a4b-ea92c227e1c6)
+)
+
+!(![REGISTER2](https://github.com/burakkabis/ParanumusAssignment/assets/134310460/38892931-7f4f-435e-96a8-9e851efe9f32)
+)
+
+
+<p id="description">Ayni kullanici sisteme tekrardan kayit oldugunda "Kullanici mevcut uyarisi.".</p>
+
+!(![REGISTER3](https://github.com/burakkabis/ParanumusAssignment/assets/134310460/5909d886-0897-4531-827c-e094c422450a)
+)
+
+### Login islemleri: 
+<p id="description">Kullanici sisteme kayit olduktan sonra Login islemi yaoabilir.Geriye token ve token ezpiration degerleri doner.</p>
+
+!(![LOGIN1](https://github.com/burakkabis/ParanumusAssignment/assets/134310460/2a2879e4-a8c6-4f03-8f5b-b04d877057b3)
+)
+
+### Login yaparken sifre hatali girilirse:
+<p id="description">Parola hatasi mesaji alir.</p>
+
+!(![LOGIN2](https://github.com/burakkabis/ParanumusAssignment/assets/134310460/7e5e4730-e1b5-4d4f-9bd6-ed3af057f569)
+)
 
 
